@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Göksu Garden Park | Antalya Konyaaltı Kır Düğünü & Etkinlik Alanı</title>
+  <meta name="description" content="Antalya Konyaaltı Bahtılı'da doğayla iç içe kır düğünü, nişan, kına ve özel davet mekanı Göksu Garden Park." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            forest: {
+              900: '#102A22',
+              800: '#16382E',
+              700: '#1F4D3F',
+              100: '#E8F0ED',
+              50: '#F4F8F6',
+            },
+            champagne: {
+              600: '#9E7B2F',
+              500: '#C59B3E',
+              400: '#D8B462',
+              100: '#F9F3E6',
+            },
+            cream: '#FAF8F5',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #1C1917;
+    }
+    .glass-nav {
+      background: rgba(250, 248, 245, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(16, 42, 34, 0.48) 0%, rgba(16, 42, 34, 0.72) 100%);
+    }
+    .tab-active {
+      background-color: #102A22;
+      color: #FFFFFF;
+      border-color: #102A22;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-forest-800 selection:text-white">
+
+  <!-- Üst Menü (Navbar) -->
+  <header class="fixed top-0 inset-x-0 z-50 glass-nav border-b border-stone-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-forest-900 flex items-center justify-center text-champagne-400 font-serif text-xl font-bold tracking-wider">
+          G
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-forest-900 block leading-none">Göksu Garden Park</span>
+          <span class="text-[11px] uppercase tracking-[0.2em] text-champagne-600 font-semibold">Konyaaltı • Antalya</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-700">
+        <a href="#ozellikler" class="hover:text-forest-900 transition">Mekan & Ayrıcalıklar</a>
+        <a href="#paketler" class="hover:text-forest-900 transition">Organizasyon Paketleri</a>
+        <a href="#galeri" class="hover:text-forest-900 transition">Galeri</a>
+        <a href="#yorumlar" class="hover:text-forest-900 transition">Çift Yorumları</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#teklif-al" class="bg-forest-900 hover:bg-forest-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-sm">
+          Tarih & Fiyat Sor
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Bölümü -->
+  <section class="relative min-h-[92vh] flex items-center pt-20 overflow-hidden">
+    <img 
+      src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80" 
+      alt="Göksu Garden Park Kır Düğünü Atmosferi" 
+      class="absolute inset-0 w-full h-full object-cover object-center"
+    />
+    <div class="absolute inset-0 hero-overlay"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-white w-full">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-xs font-medium tracking-wider uppercase mb-6">
+          <span class="w-2 h-2 rounded-full bg-champagne-400"></span>
+          Konyaaltı Bahtılı'da Doğanın Kalbinde
+        </div>
+
+        <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.08] mb-6">
+          Hayalinizdeki Kır Düğünü, <span class="italic text-champagne-400 font-normal">Asırlık Ağaçların</span> Gölgesinde.
+        </h1>
+
+        <p class="text-base sm:text-lg text-stone-200 leading-relaxed mb-9 max-w-2xl">
+          Antalya'nın en sevilen kır bahçesinde; 400'ü aşkın mutlu çiftin tercihi, geniş çim alanı, ferah açık hava atmosferi ve eksiksiz organizasyon detaylarıyla unutulmaz gecenize ev sahipliği yapıyoruz.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#teklif-al" class="bg-champagne-500 hover:bg-champagne-600 text-forest-900 font-bold px-8 py-4 rounded-full text-center transition shadow-lg">
+            WhatsApp'tan Hızlı Teklif Al
+          </a>
+          <a href="#paketler" class="bg-white/15 hover:bg-white/25 backdrop-blur-md border border-white/30 text-white font-semibold px-8 py-4 rounded-full text-center transition">
+            Organizasyon Paketlerini İncele
+          </a>
+        </div>
+
+        <!-- Güven Metrikleri -->
+        <div class="grid grid-cols-3 gap-6 max-w-lg mt-12 pt-8 border-t border-white/20">
+          <div>
+            <p class="font-serif text-3xl font-bold text-champagne-400">4.7 ★</p>
+            <p class="text-xs text-stone-300 mt-1">400+ Google Değerlendirmesi</p>
+          </div>
+          <div>
+            <p class="font-serif text-3xl font-bold text-white">750+</p>
+            <p class="text-xs text-stone-300 mt-1">Kişilik Kır Bahçesi Kapasitesi</p>
+          </div>
+          <div>
+            <p class="font-serif text-3xl font-bold text-white">Özel</p>
+            <p class="text-xs text-stone-300 mt-1">Geniş Misafir Otoparkı</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid: Neden Göksu Garden Park? -->
+  <section id="ozellikler" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-bold uppercase tracking-[0.2em] text-champagne-600">Mekan Ayrıcalıkları</span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-bold text-forest-900 mt-2">Her Detayı Düşünülmüş Kusursuz Atmosfer</h2>
+      <p class="text-stone-600 mt-4">Konyaaltı merkezine dakikalar uzaklıkta, şehrin gürültüsünden tamamen arınmış izole bir kır bahçesi deneyimi.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Büyük Kart 1 -->
+      <div class="md:col-span-2 bg-forest-900 text-white rounded-3xl p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+        <div class="relative z-10 max-w-lg">
+          <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-champagne-400 text-xs font-semibold mb-4">Doğal Kır Konsepti</span>
+          <h3 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Geniş Çim Alan & Peri Işıkları Altında Büyülü Ambiyans</h3>
+          <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+            Yeşillikler içinde özenle bakımı yapılan doğal çim zeminimiz, özel tasarım gelin yolu, rustik ahşap detaylar ve geceye masalsı bir hava katan ışıklandırma sistemimizle fotoğraflarınız kartpostal tadında çıkar.
+          </p>
+        </div>
+        <div class="relative z-10 mt-8 flex flex-wrap gap-3 text-xs font-medium">
+          <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15">✓ Gelin & Damat Hazırlık Odası</span>
+          <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15">✓ Profesyonel Ses & Sahne Işığı</span>
+          <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15">✓ Jeneratör Güvencesi</span>
+        </div>
+      </div>
+
+      <!-- Kart 2 -->
+      <div class="bg-white border border-stone-200/90 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-forest-100 text-forest-900 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-forest-900 mb-3">Esnek Hava Koşulu Çözümleri</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Bahar ve yaz akşamlarının serin esintisine uygun açık alan yerleşimi ve ani hava değişimlerine karşı planlanmış yarı kapalı alan alternatifleriyle organizasyonunuz güvence altında.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 text-xs font-semibold text-champagne-600">
+          Nisan – Kasım Sezonu Aktif
+        </div>
+      </div>
+
+      <!-- Kart 3 -->
+      <div class="bg-white border border-stone-200/90 rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-champagne-100 text-champagne-600 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-forest-900 mb-3">Kolay Ulaşım & Geniş Otopark</h3>
+          <p class="text-stone-600 text-sm leading-relaxed">
+            Konyaaltı Bahtılı lokasyonunda misafirlerinizin park yeri aramadan rahatça giriş yapabileceği ücretsiz geniş özel otopark alanı sunuyoruz.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-stone-100 text-xs font-semibold text-forest-800">
+          Bahtılı Mah. • Konyaaltı / Antalya
+        </div>
+      </div>
+
+      <!-- Büyük Kart 4 -->
+      <div class="md:col-span-2 bg-champagne-100/70 border border-champagne-400/30 rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-8">
+        <div class="max-w-md">
+          <span class="text-xs font-bold uppercase tracking-wider text-champagne-600">Taze & Özenli İkramlar</span>
+          <h3 class="font-serif text-3xl font-bold text-forest-900 mt-2 mb-3">Yemekli ve Kokteyl Menü Seçenekleri</h3>
+          <p class="text-stone-700 text-sm leading-relaxed">
+            Düğün pastanızdan sıcak ana yemek tabaklarına, karşılama kokteylinden sınırsız meşrubat servisine kadar profesyonel mutfak ve servis ekibimiz misafirlerinize eksiksiz hizmet sunar.
+          </p>
+        </div>
+        <div class="w-full sm:w-auto shrink-0">
+          <a href="#teklif-al" class="block text-center bg-forest-900 hover:bg-forest-800 text-white font-semibold px-6 py-3.5 rounded-2xl transition">
+            Menü & Kişi Başı Fiyat Sor
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekmeli Organizasyon Paketleri -->
+  <section id="paketler" class="py-24 bg-white border-y border-stone-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-champagne-600">Size Özel Konseptler</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-forest-900 mt-2">Organizasyon Paketlerimiz</h2>
+        <p class="text-stone-600 mt-3">İhtiyacınıza uygun konsepti seçin, tüm detayları tek ekranda inceleyin.</p>
+      </div>
+
+      <!-- Sekme Butonları -->
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <button onclick="switchTab('dugun')" id="tab-dugun" class="tab-btn tab-active px-6 py-3 rounded-full text-sm font-semibold border border-stone-300 transition">
+          Kır Düğünü Paketi
+        </button>
+        <button onclick="switchTab('nisan')" id="tab-nisan" class="tab-btn px-6 py-3 rounded-full text-sm font-semibold border border-stone-300 text-stone-700 hover:border-forest-900 transition">
+          Söz & Nişan Konsepti
+        </button>
+        <button onclick="switchTab('kina')" id="tab-kina" class="tab-btn px-6 py-3 rounded-full text-sm font-semibold border border-stone-300 text-stone-700 hover:border-forest-900 transition">
+          Kına Gecesi & Özel Davet
+        </button>
+      </div>
+
+      <!-- Paket İçerik Alanı -->
+      <div id="package-content" class="bg-cream border border-stone-200 rounded-3xl p-8 sm:p-12 shadow-sm">
+        <!-- JS ile dinamik dolacak -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri -->
+  <section id="galeri" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-champagne-600">Mekan Atmosferi</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-forest-900 mt-2">Göksu Garden Park'tan Kareler</h2>
+      </div>
+      <p class="text-sm text-stone-600 max-w-md">Gündüz doğanın yeşili, gece peri ışıklarının sıcaklığıyla unutulmaz anılar.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="group relative rounded-3xl overflow-hidden h-80 lg:col-span-2">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80" alt="Kır Düğünü Masa Düzeni" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent flex items-end p-6">
+          <span class="text-white font-serif text-xl font-semibold">Zarif Masa & Sandalye Süslemeleri</span>
+        </div>
+      </div>
+
+      <div class="group relative rounded-3xl overflow-hidden h-80">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80" alt="Gelin Yolu ve Çiçek Takı" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent flex items-end p-6">
+          <span class="text-white font-serif text-xl font-semibold">Özel Gelin Yolu & Tak</span>
+        </div>
+      </div>
+
+      <div class="group relative rounded-3xl overflow-hidden h-80">
+        <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80" alt="Gece Işıklandırması" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent flex items-end p-6">
+          <span class="text-white font-serif text-xl font-semibold">Büyülü Gece Aydınlatması</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Çift Yorumları -->
+  <section id="yorumlar" class="py-20 bg-forest-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-champagne-400">400+ Gerçek Değerlendirme</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-2">Mutlu Çiftlerimiz Ne Diyor?</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-3xl p-8">
+          <div class="text-champagne-400 text-sm mb-4">★★★★★</div>
+          <p class="text-stone-200 text-sm leading-relaxed mb-6">
+            "Konyaaltı'nda kır düğünü için bakmadığımız yer kalmamıştı, Göksu Garden Park'ın hem doğası hem de işletme sahiplerinin samimiyeti bizi hemen ikna etti. Tüm misafirlerimiz ortamı ve servisi çok beğendi."
+          </p>
+          <p class="font-serif text-lg font-bold text-white">Selin & Mert K.</p>
+          <span class="text-xs text-stone-400">Kır Düğünü Organizasyonu</span>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-3xl p-8">
+          <div class="text-champagne-400 text-sm mb-4">★★★★★</div>
+          <p class="text-stone-200 text-sm leading-relaxed mb-6">
+            "Ağaçların altındaki ışıklandırma akşam saatlerinde muhteşem bir atmosfer oluşturuyor. Otopark sorununun hiç olmaması ve orkestranın enerjisi gecemizi kusursuz kıldı."
+          </p>
+          <p class="font-serif text-lg font-bold text-white">Büşra & Emre T.</p>
+          <span class="text-xs text-stone-400">Yemekli Düğün Daveti</span>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-3xl p-8">
+          <div class="text-champagne-400 text-sm mb-4">★★★★★</div>
+          <p class="text-stone-200 text-sm leading-relaxed mb-6">
+            "Nişan organizasyonumuz için tercih ettik. Başından sonuna kadar her detayla tek tek ilgilendiler, hiçbir aksaklık yaşamadık. Gözünüz kapalı güvenebilirsiniz."
+          </p>
+          <p class="font-serif text-lg font-bold text-white">Zeynep & Caner A.</p>
+          <span class="text-xs text-stone-400">Söz & Nişan Organizasyonu</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Canlı WhatsApp Teklif & Tarih Sorgulama Modülü -->
+  <section id="teklif-al" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white border border-stone-200 rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+      
+      <!-- Sol Bilgi Alanı -->
+      <div class="lg:col-span-5 bg-forest-900 text-white p-8 sm:p-12 flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-champagne-400">Hızlı Rezervasyon & Bilgi</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-3 mb-4">Tarihiniz Müsait mi? Hemen Öğrenin.</h2>
+          <p class="text-stone-300 text-sm leading-relaxed mb-8">
+            Formu doldurduğunuzda seçtiğiniz tarih, davetli sayısı ve konsept bilgileri otomatik olarak hazırlanır ve doğrudan işletme yetkilimizin WhatsApp hattına iletilir.
+          </p>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3">
+              <span class="text-champagne-400 font-bold">📍</span>
+              <div>
+                <p class="font-semibold text-white">Adres</p>
+                <p class="text-stone-300">Bahtılı Mah. Göksu Garden Park, Konyaaltı / Antalya</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-champagne-400 font-bold">🕒</span>
+              <div>
+                <p class="font-semibold text-white">Mekan Ziyareti Saatleri</p>
+                <p class="text-stone-300">Her Gün 10:00 – 21:00 (Kahve eşliğinde mekan turu)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t border-white/15">
+          <p class="text-xs text-stone-400">Aracı komisyonu olmadan doğrudan mekan yetkilisiyle görüşürsünüz.</p>
+        </div>
+      </div>
+
+      <!-- Sağ Form Alanı -->
+      <div class="lg:col-span-7 p-8 sm:p-12">
+        <form id="whatsappForm" onsubmit="sendWhatsApp(event)" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Adınız Soyadınız</label>
+              <input type="text" id="guestName" required placeholder="Örn: Ayşe & Burak" class="w-full px-4 py-3.5 rounded-xl border border-stone-300 focus:outline-none focus:border-forest-900 bg-cream text-sm" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Organizasyon Türü</label>
+              <select id="eventType" class="w-full px-4 py-3.5 rounded-xl border border-stone-300 focus:outline-none focus:border-forest-900 bg-cream text-sm">
+                <option value="Kır Düğünü">Kır Düğünü</option>
+                <option value="Söz / Nişan">Söz / Nişan</option>
+                <option value="Kına Gecesi">Kına Gecesi</option>
+                <option value="Sünnet Düğünü">Sünnet Düğünü</option>
+                <option value="Kurumsal / Özel Davet">Kurumsal / Özel Davet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Planlanan Tarih / Ay</label>
+              <input type="text" id="eventDate" required placeholder="Örn: 15 Haziran 2026 veya Temmuz" class="w-full px-4 py-3.5 rounded-xl border border-stone-300 focus:outline-none focus:border-forest-900 bg-cream text-sm" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Tahmini Davetli Sayısı</label>
+              <select id="guestCount" class="w-full px-4 py-3.5 rounded-xl border border-stone-300 focus:outline-none focus:border-forest-900 bg-cream text-sm">
+                <option value="100 - 250 Kişi">100 - 250 Kişi</option>
+                <option value="250 - 400 Kişi" selected>250 - 400 Kişi</option>
+                <option value="400 - 600 Kişi">400 - 600 Kişi</option>
+                <option value="600+ Kişi">600+ Kişi</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">İkram Tercihi</label>
+            <div class="grid grid-cols-2 gap-3">
+              <label class="flex items-center gap-2.5 p-3.5 rounded-xl border border-stone-300 bg-cream cursor-pointer text-sm font-medium">
+                <input type="radio" name="catering" value="Yemekli Menü" checked class="accent-forest-900" />
+                Yemekli Menü
+              </label>
+              <label class="flex items-center gap-2.5 p-3.5 rounded-xl border border-stone-300 bg-cream cursor-pointer text-sm font-medium">
+                <input type="radio" name="catering" value="Kokteyl / Pastalı" class="accent-forest-900" />
+                Kokteyl / Pastalı
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="w-full bg-forest-900 hover:bg-forest-800 text-white font-bold py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+            <span>WhatsApp Üzerinden Müsaitlik & Teklif İste</span>
+            <span>→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alt Bilgi (Footer) -->
+  <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <span class="font-serif text-2xl font-bold text-white block">Göksu Garden Park</span>
+        <span class="text-xs text-stone-500">Bahtılı, Konyaaltı / Antalya • Kır Düğünü & Etkinlik Bahçesi</span>
+      </div>
+      <div class="flex items-center gap-6 text-xs">
+        <a href="#ozellikler" class="hover:text-white transition">Ayrıcalıklar</a>
+        <a href="#paketler" class="hover:text-white transition">Paketler</a>
+        <a href="#galeri" class="hover:text-white transition">Galeri</a>
+        <a href="#teklif-al" class="hover:text-white transition">İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Etkileşim Scriptleri -->
+  <script>
+    const packages = {
+      dugun: {
+        badge: "En Çok Tercih Edilen",
+        title: "Her Şey Dahil Kır Düğünü Paketi",
+        desc: "Hayalinizdeki kır düğünü için mekan süslemesinden canlı orkestraya, fotoğraf çekiminden düğün pastasına kadar tek pakette eksiksiz çözüm.",
+        items: [
+          "Gelin yolu çiçek takları, şamdanlar ve konsept masa süslemesi",
+          "Profesyonel canlı müzik orkestrası & DJ performansı",
+          "Gece boyu sınırsız HD video kaydı ve dış mekan fotoğraf çekimi",
+          "Çok katlı özel tasarım düğün pastası ve meşrubat ikramı",
+          "Gelin & damat için özel klimalı hazırlık odası ve ikramlar",
+          "Ücretsiz vale ve geniş misafir otoparkı"
+        ]
+      },
+      nisan: {
+        badge: "Butik & Zarif",
+        title: "Söz & Nişan Organizasyon Konsepti",
+        desc: "Aileleriniz ve en yakın dostlarınızla samimi ama görkemli bir nişan gecesi için doğayla iç içe özel alan düzenlemesi.",
+        items: [
+          "Özel tasarım nişan tagı, arka fon ve yüzük tepsisi sunumu",
+          "Konsept renklerde masa örtüleri, suplalar ve canlı/yapay çiçek aranjmanları",
+          "Karşılama panosu ve misafir karşılama ekibi",
+          "Nişan pastası ve seçmeli ikram tabağı servisi",
+          "Profesyonel ses sistemi ve gece boyu müzik yayını",
+          "Anı fotoğrafçısı ve dijital albüm teslimi"
+        ]
+      },
+      kina: {
+        badge: "Geleneksel & Modern",
+        title: "Kına Gecesi & Özel Kutlama Paketi",
+        desc: "Geleneksel kına ritüellerini modern kır bahçesi konforuyla birleştiren, eğlencesi hiç bitmeyen özel gece konsepti.",
+        items: [
+          "Kına tahtı, cibinlik, nedime minderleri ve kına tepsisi seti",
+          "Bayan DJ / orkestra ve özel ışık şovları",
+          "Misafirlere dağıtılmak üzere hediyelik kuru kına ve ikramlıklar",
+          "Gelin çıkışı için volkan ve konfeti gösterisi",
+          "Tam gece video & fotoğraf çekimi",
+          "Özel menü ve sınırsız çay/meşrubat servisi"
+        ]
+      }
+    };
+
+    function switchTab(key) {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('tab-active');
+        btn.classList.add('text-stone-700');
+      });
+      const activeBtn = document.getElementById('tab-' + key);
+      activeBtn.classList.add('tab-active');
+      activeBtn.classList.remove('text-stone-700');
+
+      const pkg = packages[key];
+      const container = document.getElementById('package-content');
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5">
+            <span class="inline-block px-3 py-1 rounded-full bg-champagne-100 text-champagne-600 text-xs font-bold mb-3">${pkg.badge}</span>
+            <h3 class="font-serif text-3xl font-bold text-forest-900 mb-4">${pkg.title}</h3>
+            <p class="text-stone-600 text-sm leading-relaxed mb-6">${pkg.desc}</p>
+            <a href="#teklif-al" class="inline-flex items-center gap-2 bg-forest-900 hover:bg-forest-800 text-white text-sm font-semibold px-6 py-3.5 rounded-full transition">
+              Bu Paket İçin Fiyat Al →
+            </a>
+          </div>
+          <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 border border-stone-200/80">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-4">Paket İçeriğine Dahil Olan Hizmetler</h4>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              ${pkg.items.map(item => `
+                <li class="flex items-start gap-2.5 text-sm text-stone-700">
+                  <span class="w-5 h-5 rounded-full bg-forest-100 text-forest-900 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                  <span>${item}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+        </div>
+      `;
+    }
+
+    // Varsayılan sekme yüklemesi
+    switchTab('dugun');
+
+    function sendWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById('guestName').value;
+      const type = document.getElementById('eventType').value;
+      const date = document.getElementById('eventDate').value;
+      const count = document.getElementById('guestCount').value;
+      const catering = document.querySelector('input[name="catering"]:checked').value;
+
+      const text = `Merhaba Göksu Garden Park ekibi,%0A%0AWeb siteniz üzerinden organizasyon bilgi ve fiyat talebi oluşturmak istiyorum:%0A• *İsim:* ${encodeURIComponent(name)}%0A• *Organizasyon:* ${encodeURIComponent(type)}%0A• *Planlanan Tarih:* ${encodeURIComponent(date)}%0A• *Davetli Sayısı:* ${encodeURIComponent(count)}%0A• *İkram Tercihi:* ${encodeURIComponent(catering)}%0A%0AMüsaitlik ve paket detayları hakkında bilgi alabilir miyim?`;
+      
+      // İşletmenin gerçek numarası bağlandığında buraya yazılacak (Demo için örnek format)
+      const phone = "905000000000"; 
+      window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+    }
+  </script>
+</body>
+</html>
